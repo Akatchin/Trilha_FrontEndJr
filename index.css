@@ -10,8 +10,17 @@
 
 .header {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.navbar {
+    display: inherit;
+    width: 100%;
+    margin: 30px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .profile {
