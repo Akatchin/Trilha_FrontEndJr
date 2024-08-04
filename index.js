@@ -1,19 +1,23 @@
-const nodes = Array.from(document.querySelector(".js-onscreen"));
+window.scroll = ScrollReveal({reset: true});
+console.log('funcionando');
 
-const isOnScreen = (el) => {
-    let rect = el.getBoundingClientRect();
-    return rect.top > 0 && rect.bottom < window.innerHeight;
-}
+scroll.reveal('.profile', {
+    duration: 2000,
+    delay: 500,
+    rotate: {
+        x: 0,
+        y: 500,
+        z: 0 
+    }
+})
 
-function playAnimation(el) {
-    if(isOnScreen(el)) el.style.animationPlayState = 'running';
-}
+scroll.reveal('.about-reveal', {
+    duration: 2000,
+    distance: '50px'
+})
 
-const render = () => nodes.forEach(playAnimation);
-
-// Exibe os elementso que já estão
-// na tela antes do primeiro scroll
-
-render();
-
-window.addEventListener('scroll', render);
+scroll.reveal('.presentation-text-reveal', {
+    duration: 2000,
+    distance: '90px',
+    origin: 'left'
+}) 

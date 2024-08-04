@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="index.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+        <div class="container">
         <header>
             <div class="header">                
                 <section class="navbar">
@@ -25,7 +27,7 @@
                     </div>
                 </section>
                 <section class="presentation">
-                    <p class="presentation-text">
+                    <p class="presentation-text presentation-text-reveal">
                         Olá, me chamo Thiago Henrique! me chamo Thiago Henrique! Tenho 22 anos e Sou estudante de Sistemas de Informação, almejando me tornar um programador FrontEnd. 
                         Possuo conhecimentos em JavaScript, TypeScript, PHP básico, React e alguns hooks, MongoDB e Node.js. 
                         Trabalho atualmente como mecânico no setor industrial, onde desenvolvi um forte apreço pela organização e pelo trabalho em equipe.
@@ -36,7 +38,7 @@
         </header>
         <main>
             <h3>Sobre mim</h3>
-            <section class="about js-onscreen">  
+            <section class="about about-reveal">  
                 <p>
                     Sou estudante de Sistemas de Informação e tenho como objetivo me tornar um programador FrontEnd. Atualmente, possuo conhecimentos em JavaScript, TypeScript, PHP básico, React e alguns hooks, MongoDB e Node.js. 
                     Além disso, trabalho como mecânico no setor industrial, onde adquiri uma compreensão profunda sobre a importância da organização e do trabalho em equipe.
@@ -47,7 +49,7 @@
                 <hr class="vertical-line">
             </section>
             <h3>Gostos pessoais</h3>
-            <section class="personal-states js-onscreen">
+            <section class="personal-states about-reveal">
                 <p> 
                     Sou apaixonado por leitura, especialmente por livros que me permitem viajar no tempo e no espaço, e adoro mergulhar em histórias ricas e detalhadas que me fazem refletir sobre o mundo ao meu redor. 
                     A história também me fascina, pois compreender como chegamos ao presente a partir do passado me intriga e influencia minha visão de mundo.
@@ -65,7 +67,7 @@
                 <hr class="vertical-line"> 
             </section>
             <h3>Motivação</h3>
-            <section class="motivation js-onscreen">
+            <section class="motivation about-reveal">
                 <hr class="vertical-line">
                 <p>
                     Estou motivado a participar deste programa porque quero ampliar meus conhecimentos sobre programação FrontEnd e adquirir minha primeira experiência como programador. 
@@ -78,5 +80,4 @@
     </div>
 </div>
 </body>
-<script src="index.js"></script>
 </html>
