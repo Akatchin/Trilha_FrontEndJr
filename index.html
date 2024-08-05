@@ -6,19 +6,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="reveal.js" defer></script>
     <script src="index.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Document</title>
 </head>
-<body>
+<body onload="textAnimation('Seja bem-vindo', 200)">
         <div class="container">
         <header>
             <div class="header">                
                 <section class="navbar">
                     <div>
-                        <h2>Seja bem vindo</h2>
+                        <h2  class="welcome-message"></h2>
                     </div>
                     <nav >
                     <a href="" class="navlink">Início</a>
@@ -92,16 +93,26 @@
             <section>
                 <h3>Tecnologias que utilizo</h3>
                 <div class="navbar-2">
-                    <nav>
-                        <img class="icon icon-html" src="/assets/images/html_icon.png" alt="icone html">
-                        <img class="icon icon-css" src="/assets/images/css_icon.png" alt="icone css">
-                        <img class="icon react-icon" src="/assets/images/react_icon.png" alt="icone react">
-                        <img class="icon javascript-icon" src="/assets/images/javascript_icon.png" alt="icone javascript">
-                        <img class="icon php-icon" src="/assets/images/php_icon.png" alt="icone php">
-                        <img class="icon typescript-icon" src="/assets/images/typescript_icon.png" alt="icone typescript">
-                        <img class="icon nodejs-icon" src="/assets/images/nodejs_icon.png" alt="icone nodejs">
-                        <img class="icon mongodb-icon" src="/assets/images/mongodb_icon.svg" alt="icone mongodb">
-                    </nav>
+                    <div class="presentation-2">
+                        <img class="profile" src="./assets/images/myprofile.jpg" alt="Image profile">
+                        <p class="presentation-text">
+                            Ao longo do início da minha carreira como desenvolvedor venho com uma bagagem de estudos constantes
+                            onde procuro extrair o máximo de conhecimento possível das
+                        </p>
+                    </div>
+                    <div class="technology">
+                        <hr class="vertical-line">
+                        <div>
+                            <img class="icon html-icon" src="/assets/images/html_icon.png" alt="icone html">
+                            <img class="icon css-icon" src="/assets/images/css_icon.png" alt="icone css">
+                            <img class="icon javascript-icon" src="/assets/images/javascript_icon.png" alt="icone javascript">
+                            <img class="icon php-icon" src="/assets/images/php_icon.png" alt="icone php">
+                            <img class="icon react-icon" src="/assets/images/react_icon.png" alt="icone react">
+                            <img class="icon typescript-icon" src="/assets/images/typescript_icon.png" alt="icone typescript">
+                            <img class="icon nodejs-icon" src="/assets/images/nodejs_icon.png" alt="icone nodejs">
+                            <img class="icon mongodb-icon" src="/assets/images/mongodb_icon.svg" alt="icone mongodb">
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
