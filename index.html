@@ -14,41 +14,48 @@
     <title>Document</title>
 </head>
 <body onload="textAnimation('Seja bem-vindo', 200)">
-        <div class="container">
-        <header>
-            <div class="header">                
-                <section class="navbar">
-                    <div>
-                        <h2  class="welcome-message"></h2>
-                    </div>
-                    <nav >
-                    <a href="" class="navlink">Início</a>
-                    <a href="" class="navlink">Sobre mim</a>
-                    <a href="" class="navlink">Gostos pessoais</a>
-                    <a href="" class="navlink">Motivações</a>
-                    </nav>
-                    <div>
-                    <a href="" class="contact">Contato</a>                        
-                    </div>
-                </section>
-                <section class="presentation">
+        <header>          
+                <section class="nav">  
+                    <hr class="bottom-line"> 
+                    <nav class="navbar">
+                        <div>
+                            <h2 class="welcome-message"></h2>
+                        </div>
+                        <nav>
+                        <a href="#presentation" class="navlink">Início</a>
+                        <a href="#about" class="navlink">Sobre mim</a>
+                        <a href="#personal-states" class="navlink">Gostos pessoais</a>
+                        <a href="#motivation" class="navlink">Motivações</a>
+                        </nav>
+                        <div>
+                        <a href="#social-media" class="contact">Contato</a>                        
+                        </div>
+                    </nav>                    
+                    <hr class="bottom-line">
+                </section>  
+                <section class="presentation" id="presentation">
                     <div class="presentation-text presentation-text-reveal">
-                    <p >
-                        Olá, me chamo Thiago Henrique! me chamo Thiago Henrique! Tenho 22 anos e Sou estudante de Sistemas de Informação, almejando me tornar um programador FrontEnd. 
+                    <p style="font-size: 25px;">
+                        <strong style="font-size: 30px; color: #e53939;">Olá, </strong><br>
+                        me chamo <strong style="color: #e53939; font-size: 30px;">Thiago Henrique</strong><br>
+                        Sou um programador <strong style="color: #e53939;">Front-End</strong>
+                    </p>
+                    <br>
+                    <p>
+                        Tenho 22 anos e Sou estudante de Sistemas de Informação, almejando me tornar um programador FrontEnd. 
                         Possuo conhecimentos em JavaScript, TypeScript, PHP básico, React e alguns hooks, MongoDB e Node.js. 
                         Trabalho atualmente como mecânico no setor industrial, onde desenvolvi um forte apreço pela organização e pelo trabalho em equipe.
                     </p>
-                    <a href="" class="contact">Entre em contato</a>     
+                    <a href="#social-media" class="contact">Entre em contato</a>     
                     </div>
                     <img class="profile" src="./assets/images/myprofile.jpg" alt="Image profile">
                 </section>
-            </div>
         </header>
         <main>
             
             <section class="about-reveal about-section">  
-                <h3>Sobre mim</h3>
-                <div class="about">
+                <h2>Sobre mim</h2>
+                <div class="about" id="about">
                     <p>
                     Sou estudante de Sistemas de Informação e tenho como objetivo me tornar um programador FrontEnd. Atualmente, possuo conhecimentos em JavaScript, TypeScript, PHP básico, React e alguns hooks, MongoDB e Node.js. 
                     Além disso, trabalho como mecânico no setor industrial, onde adquiri uma compreensão profunda sobre a importância da organização e do trabalho em equipe.
@@ -59,8 +66,8 @@
                 <hr class="vertical-line"></div>
             </section>
             <section class="about-reveal about-section">
-                <h3>Gostos pessoais</h3>
-                <div class="personal-states ">
+                <h2>Gostos pessoais</h2>
+                <div class="personal-states " id="personal-states">
                     <p> 
                         Sou apaixonado por leitura, especialmente por livros que me permitem viajar no tempo e no espaço, e adoro mergulhar em histórias ricas e detalhadas que me fazem refletir sobre o mundo ao meu redor. 
                         A história também me fascina, pois compreender como chegamos ao presente a partir do passado me intriga e influencia minha visão de mundo.
@@ -79,8 +86,8 @@
                 </div>
             </section>
             <section class="about-reveal about-section">
-                <h3>Motivação</h3>
-                <div class="motivation ">
+                <h2>Motivação</h2>
+                <div class="motivation " id="motivation">
                 <hr class="vertical-line">
                     <p>
                         Estou motivado a participar deste programa porque quero ampliar meus conhecimentos sobre programação FrontEnd e adquirir minha primeira experiência como programador. 
@@ -91,13 +98,15 @@
                 </div>
             </section>
             <section>
-                <h3>Tecnologias que utilizo</h3>
+                <h2>Tecnologias que utilizo</h2>
                 <div class="navbar-2">
                     <div class="presentation-2">
-                        <img class="profile" src="./assets/images/myprofile.jpg" alt="Image profile">
-                        <p class="presentation-text">
-                            Ao longo do início da minha carreira como desenvolvedor venho com uma bagagem de estudos constantes
-                            onde procuro extrair o máximo de conhecimento possível das
+                        <p class="presentation-text-reveal">
+                            Tenho uma base sólida em HTML e CSS para estruturar e estilizar interfaces web de forma responsiva. 
+                            Domino JavaScript para criar interações dinâmicas e utilizo TypeScript para escrever código mais seguro e escalável. 
+                            Tenho conhecimentos básicos de PHP para scripts server-side, sou proficiente em React para desenvolver interfaces reutilizáveis, 
+                            e tenho experiência em MongoDB para gerenciar dados de forma eficiente. Além disso, utilizo Node.js 
+                            para construir aplicações de back-end escaláveis e funcionais.
                         </p>
                     </div>
                     <div class="technology">
@@ -116,7 +125,19 @@
                 </div>
             </section>
         </main>
-    </div>
 </div>
 </body>
+<footer>
+    <hr class="top-line">
+    <div class="footer-content">
+        <p class="footer-text">
+            Criado com ❤️ por <strong>Thiago</strong> 
+        </p>
+        <nav class="social-media" id="social-media">
+            <a href=""><img src="/assets/images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href=""><img src="/assets/images/linkedin_icon.svg" alt="linkedin icon"></a>
+            <a href=""><img src="/assets/images/github_icon.svg" alt="github icon"></a>
+        </nav>
+    </div>
+</footer>
 </html>

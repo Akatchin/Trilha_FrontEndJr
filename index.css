@@ -14,6 +14,10 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -27,29 +31,44 @@ main {
     margin-top: 5rem;
 }
 
-h3 {
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+h2 {
     text-align: center;
     margin: 50px 0 50px 0;
 }
+
+/*refences class*/
 
 .container {
     display: flex;
     flex-direction: column;
 }
 
-.header {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.nav {
+    position: fixed;    
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
 
 .navbar {
-    display: inherit;
-    padding: 4rem 0 4rem 0;
+    display: flex;
     width: 100%;
+    padding: 20px;
     align-items: center;
     justify-content: space-around;
+}
+
+.welcome-message {
+    padding: 0;
+    margin: 0;
 }
 
 .navlink {
@@ -59,16 +78,11 @@ h3 {
 }
 
 .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
+    margin: 20px 0 20px 0;
     background-color: #e53939;
-    padding: 10px 5px 10px 5px; 
-    margin-top: 20px;
+    padding: 10px ; 
     width: 100px;
-    height: 30px;
     border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
@@ -85,6 +99,7 @@ h3 {
 
 .presentation {
     display: inherit;
+    width: 90%;
     align-items: center;
     justify-content: space-between;
     padding: 7rem 3rem 7rem 3rem;
@@ -92,9 +107,12 @@ h3 {
 
 .presentation-text {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     width: 50%;
     padding: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .about-section {
@@ -107,33 +125,36 @@ h3 {
 .about {
     display: flex;
     flex-direction: row-reverse;
+    font-size: 18px;
 }
 
 .personal-states {
     display: flex;
+    font-size: 18px;
 }
 
 .motivation {
     display: flex;
+    font-size: 18px;
 }
 
 .navbar-2 {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 100px 0 100px 0;
+    justify-content: space-around;
+    margin: 100px 0 100px 0;
 }
 
 .technology {
     display: flex;
+    font-size: 18px;
     width: 30%;
 }
 
 .presentation-2 {
-    display: flex;
-    width: 60%;
-    flex-direction: column;
-    align-items: center;
+    width: 30%;
+    font-size: 18px;
+    height: auto;
 }
 
 .icon {
@@ -143,16 +164,49 @@ h3 {
     margin: 20px;
 }
 
+.footer-content {
+    width: inherit;
+}
+
+.footer-text {
+    padding: 2rem 0 2rem 0;
+    color: darkgrey;
+}
+
+.social-media {
+    display: flex;
+    width: auto;
+    justify-content: space-around;
+}
+
+/*Lines*/
+
+.vertical-line {
+    height: auto;
+    border-left: #e53939 solid 10px;
+    margin: 0 15px 0 15px;
+}
+
+.bottom-line {
+    width: 100vw;
+    border-bottom: #e53939 solid 3px;
+}
+
+.top-line {
+    width: 100%;
+    border-top: rgba(122, 118, 117, 0.6) solid 3px;
+}
+
+/*HOVER CSS*/
+
+.navlink:hover {
+    color: whitesmoke;
+}
+
 .icon:hover {
     background-color: darkgrey;
     transition: 0.5s;
 } 
-
-.vertical-line {
-    height: inherit;
-    border-left: #e53939 solid 10px;
-    margin: 0 15px 0 15px;
-}
 
 /*SCROOL REVEAL ANIMATIONS*/
 
